@@ -1,0 +1,766 @@
+{
+  "total_symptoms": 132,
+  "symptoms": [
+    "itching",
+    "skin_rash",
+    "nodal_skin_eruptions",
+    "continuous_sneezing",
+    "shivering",
+    "chills",
+    "joint_pain",
+    "stomach_pain",
+    "acidity",
+    "ulcers_on_tongue",
+    "muscle_wasting",
+    "vomiting",
+    "burning_micturition",
+    "spotting_ urination",
+    "fatigue",
+    "weight_gain",
+    "anxiety",
+    "cold_hands_and_feets",
+    "mood_swings",
+    "weight_loss",
+    "restlessness",
+    "lethargy",
+    "patches_in_throat",
+    "irregular_sugar_level",
+    "cough",
+    "high_fever",
+    "sunken_eyes",
+    "breathlessness",
+    "sweating",
+    "dehydration",
+    "indigestion",
+    "headache",
+    "yellowish_skin",
+    "dark_urine",
+    "nausea",
+    "loss_of_appetite",
+    "pain_behind_the_eyes",
+    "back_pain",
+    "constipation",
+    "abdominal_pain",
+    "diarrhoea",
+    "mild_fever",
+    "yellow_urine",
+    "yellowing_of_eyes",
+    "acute_liver_failure",
+    "fluid_overload",
+    "swelling_of_stomach",
+    "swelled_lymph_nodes",
+    "malaise",
+    "blurred_and_distorted_vision",
+    "phlegm",
+    "throat_irritation",
+    "redness_of_eyes",
+    "sinus_pressure",
+    "runny_nose",
+    "congestion",
+    "chest_pain",
+    "weakness_in_limbs",
+    "fast_heart_rate",
+    "pain_during_bowel_movements",
+    "pain_in_anal_region",
+    "bloody_stool",
+    "irritation_in_anus",
+    "neck_pain",
+    "dizziness",
+    "cramps",
+    "bruising",
+    "obesity",
+    "swollen_legs",
+    "swollen_blood_vessels",
+    "puffy_face_and_eyes",
+    "enlarged_thyroid",
+    "brittle_nails",
+    "swollen_extremeties",
+    "excessive_hunger",
+    "extra_marital_contacts",
+    "drying_and_tingling_lips",
+    "slurred_speech",
+    "knee_pain",
+    "hip_joint_pain",
+    "muscle_weakness",
+    "stiff_neck",
+    "swelling_joints",
+    "movement_stiffness",
+    "spinning_movements",
+    "loss_of_balance",
+    "unsteadiness",
+    "weakness_of_one_body_side",
+    "loss_of_smell",
+    "bladder_discomfort",
+    "foul_smell_of urine",
+    "continuous_feel_of_urine",
+    "passage_of_gases",
+    "internal_itching",
+    "toxic_look_(typhos)",
+    "depression",
+    "irritability",
+    "muscle_pain",
+    "altered_sensorium",
+    "red_spots_over_body",
+    "belly_pain",
+    "abnormal_menstruation",
+    "dischromic _patches",
+    "watering_from_eyes",
+    "increased_appetite",
+    "polyuria",
+    "family_history",
+    "mucoid_sputum",
+    "rusty_sputum",
+    "lack_of_concentration",
+    "visual_disturbances",
+    "receiving_blood_transfusion",
+    "receiving_unsterile_injections",
+    "coma",
+    "stomach_bleeding",
+    "distention_of_abdomen",
+    "history_of_alcohol_consumption",
+    "fluid_overload.1",
+    "blood_in_sputum",
+    "prominent_veins_on_calf",
+    "palpitations",
+    "painful_walking",
+    "pus_filled_pimples",
+    "blackheads",
+    "scurring",
+    "skin_peeling",
+    "silver_like_dusting",
+    "small_dents_in_nails",
+    "inflammatory_nails",
+    "blister",
+    "red_sore_around_nose",
+    "yellow_crust_ooze"
+  ],
+  "symptom_categories": {
+    "Skin & Dermatology": [
+      {
+        "id": "itching",
+        "label": "Itching"
+      },
+      {
+        "id": "skin_rash",
+        "label": "Skin Rash"
+      },
+      {
+        "id": "nodal_skin_eruptions",
+        "label": "Nodal Skin Eruptions"
+      },
+      {
+        "id": "patches_in_throat",
+        "label": "Patches In Throat"
+      },
+      {
+        "id": "yellowish_skin",
+        "label": "Yellowish Skin"
+      },
+      {
+        "id": "redness_of_eyes",
+        "label": "Redness Of Eyes"
+      },
+      {
+        "id": "bruising",
+        "label": "Bruising"
+      },
+      {
+        "id": "brittle_nails",
+        "label": "Brittle Nails"
+      },
+      {
+        "id": "drying_and_tingling_lips",
+        "label": "Drying And Tingling Lips"
+      },
+      {
+        "id": "internal_itching",
+        "label": "Internal Itching"
+      },
+      {
+        "id": "dischromic _patches",
+        "label": "Dischromic  Patches"
+      },
+      {
+        "id": "skin_peeling",
+        "label": "Skin Peeling"
+      },
+      {
+        "id": "small_dents_in_nails",
+        "label": "Small Dents In Nails"
+      },
+      {
+        "id": "inflammatory_nails",
+        "label": "Inflammatory Nails"
+      },
+      {
+        "id": "blister",
+        "label": "Blister"
+      }
+    ],
+    "Respiratory & ENT": [
+      {
+        "id": "continuous_sneezing",
+        "label": "Continuous Sneezing"
+      },
+      {
+        "id": "cough",
+        "label": "Cough"
+      },
+      {
+        "id": "breathlessness",
+        "label": "Breathlessness"
+      },
+      {
+        "id": "phlegm",
+        "label": "Phlegm"
+      },
+      {
+        "id": "throat_irritation",
+        "label": "Throat Irritation"
+      },
+      {
+        "id": "sinus_pressure",
+        "label": "Sinus Pressure"
+      },
+      {
+        "id": "runny_nose",
+        "label": "Runny Nose"
+      },
+      {
+        "id": "congestion",
+        "label": "Congestion"
+      },
+      {
+        "id": "chest_pain",
+        "label": "Chest Pain"
+      },
+      {
+        "id": "loss_of_smell",
+        "label": "Loss Of Smell"
+      },
+      {
+        "id": "mucoid_sputum",
+        "label": "Mucoid Sputum"
+      },
+      {
+        "id": "blood_in_sputum",
+        "label": "Blood In Sputum"
+      }
+    ],
+    "Digestive & Abdominal": [
+      {
+        "id": "stomach_pain",
+        "label": "Stomach Pain"
+      },
+      {
+        "id": "acidity",
+        "label": "Acidity"
+      },
+      {
+        "id": "vomiting",
+        "label": "Vomiting"
+      },
+      {
+        "id": "indigestion",
+        "label": "Indigestion"
+      },
+      {
+        "id": "nausea",
+        "label": "Nausea"
+      },
+      {
+        "id": "loss_of_appetite",
+        "label": "Loss Of Appetite"
+      },
+      {
+        "id": "constipation",
+        "label": "Constipation"
+      },
+      {
+        "id": "abdominal_pain",
+        "label": "Abdominal Pain"
+      },
+      {
+        "id": "diarrhoea",
+        "label": "Diarrhoea"
+      },
+      {
+        "id": "acute_liver_failure",
+        "label": "Acute Liver Failure"
+      },
+      {
+        "id": "swelling_of_stomach",
+        "label": "Swelling Of Stomach"
+      },
+      {
+        "id": "passage_of_gases",
+        "label": "Passage Of Gases"
+      },
+      {
+        "id": "increased_appetite",
+        "label": "Increased Appetite"
+      },
+      {
+        "id": "stomach_bleeding",
+        "label": "Stomach Bleeding"
+      },
+      {
+        "id": "distention_of_abdomen",
+        "label": "Distention Of Abdomen"
+      }
+    ],
+    "Systemic & General": [
+      {
+        "id": "shivering",
+        "label": "Shivering"
+      },
+      {
+        "id": "chills",
+        "label": "Chills"
+      },
+      {
+        "id": "fatigue",
+        "label": "Fatigue"
+      },
+      {
+        "id": "weight_gain",
+        "label": "Weight Gain"
+      },
+      {
+        "id": "weight_loss",
+        "label": "Weight Loss"
+      },
+      {
+        "id": "lethargy",
+        "label": "Lethargy"
+      },
+      {
+        "id": "high_fever",
+        "label": "High Fever"
+      },
+      {
+        "id": "sweating",
+        "label": "Sweating"
+      },
+      {
+        "id": "dehydration",
+        "label": "Dehydration"
+      },
+      {
+        "id": "mild_fever",
+        "label": "Mild Fever"
+      },
+      {
+        "id": "malaise",
+        "label": "Malaise"
+      }
+    ],
+    "Neurological & Mental": [
+      {
+        "id": "headache",
+        "label": "Headache"
+      },
+      {
+        "id": "dizziness",
+        "label": "Dizziness"
+      },
+      {
+        "id": "slurred_speech",
+        "label": "Slurred Speech"
+      },
+      {
+        "id": "unsteadiness",
+        "label": "Unsteadiness"
+      },
+      {
+        "id": "depression",
+        "label": "Depression"
+      },
+      {
+        "id": "irritability",
+        "label": "Irritability"
+      },
+      {
+        "id": "altered_sensorium",
+        "label": "Altered Sensorium"
+      },
+      {
+        "id": "lack_of_concentration",
+        "label": "Lack Of Concentration"
+      },
+      {
+        "id": "visual_disturbances",
+        "label": "Visual Disturbances"
+      }
+    ],
+    "Musculoskeletal": [
+      {
+        "id": "joint_pain",
+        "label": "Joint Pain"
+      },
+      {
+        "id": "muscle_wasting",
+        "label": "Muscle Wasting"
+      },
+      {
+        "id": "back_pain",
+        "label": "Back Pain"
+      },
+      {
+        "id": "weakness_in_limbs",
+        "label": "Weakness In Limbs"
+      },
+      {
+        "id": "pain_in_anal_region",
+        "label": "Pain In Anal Region"
+      },
+      {
+        "id": "neck_pain",
+        "label": "Neck Pain"
+      },
+      {
+        "id": "cramps",
+        "label": "Cramps"
+      },
+      {
+        "id": "knee_pain",
+        "label": "Knee Pain"
+      },
+      {
+        "id": "hip_joint_pain",
+        "label": "Hip Joint Pain"
+      },
+      {
+        "id": "muscle_weakness",
+        "label": "Muscle Weakness"
+      },
+      {
+        "id": "stiff_neck",
+        "label": "Stiff Neck"
+      },
+      {
+        "id": "swelling_joints",
+        "label": "Swelling Joints"
+      },
+      {
+        "id": "muscle_pain",
+        "label": "Muscle Pain"
+      }
+    ],
+    "Urinary & Reproductive": [
+      {
+        "id": "burning_micturition",
+        "label": "Burning Micturition"
+      },
+      {
+        "id": "spotting_ urination",
+        "label": "Spotting  Urination"
+      },
+      {
+        "id": "dark_urine",
+        "label": "Dark Urine"
+      },
+      {
+        "id": "yellow_urine",
+        "label": "Yellow Urine"
+      },
+      {
+        "id": "bladder_discomfort",
+        "label": "Bladder Discomfort"
+      },
+      {
+        "id": "foul_smell_of urine",
+        "label": "Foul Smell Of Urine"
+      },
+      {
+        "id": "continuous_feel_of_urine",
+        "label": "Continuous Feel Of Urine"
+      },
+      {
+        "id": "polyuria",
+        "label": "Polyuria"
+      }
+    ],
+    "Cardiovascular & Others": [
+      {
+        "id": "ulcers_on_tongue",
+        "label": "Ulcers On Tongue"
+      },
+      {
+        "id": "anxiety",
+        "label": "Anxiety"
+      },
+      {
+        "id": "cold_hands_and_feets",
+        "label": "Cold Hands And Feets"
+      },
+      {
+        "id": "mood_swings",
+        "label": "Mood Swings"
+      },
+      {
+        "id": "restlessness",
+        "label": "Restlessness"
+      },
+      {
+        "id": "irregular_sugar_level",
+        "label": "Irregular Sugar Level"
+      },
+      {
+        "id": "sunken_eyes",
+        "label": "Sunken Eyes"
+      },
+      {
+        "id": "pain_behind_the_eyes",
+        "label": "Pain Behind The Eyes"
+      },
+      {
+        "id": "yellowing_of_eyes",
+        "label": "Yellowing Of Eyes"
+      },
+      {
+        "id": "fluid_overload",
+        "label": "Fluid Overload"
+      },
+      {
+        "id": "swelled_lymph_nodes",
+        "label": "Swelled Lymph Nodes"
+      },
+      {
+        "id": "blurred_and_distorted_vision",
+        "label": "Blurred And Distorted Vision"
+      },
+      {
+        "id": "fast_heart_rate",
+        "label": "Fast Heart Rate"
+      },
+      {
+        "id": "pain_during_bowel_movements",
+        "label": "Pain During Bowel Movements"
+      },
+      {
+        "id": "bloody_stool",
+        "label": "Bloody Stool"
+      },
+      {
+        "id": "irritation_in_anus",
+        "label": "Irritation In Anus"
+      },
+      {
+        "id": "obesity",
+        "label": "Obesity"
+      },
+      {
+        "id": "swollen_legs",
+        "label": "Swollen Legs"
+      },
+      {
+        "id": "swollen_blood_vessels",
+        "label": "Swollen Blood Vessels"
+      },
+      {
+        "id": "puffy_face_and_eyes",
+        "label": "Puffy Face And Eyes"
+      },
+      {
+        "id": "enlarged_thyroid",
+        "label": "Enlarged Thyroid"
+      },
+      {
+        "id": "swollen_extremeties",
+        "label": "Swollen Extremeties"
+      },
+      {
+        "id": "excessive_hunger",
+        "label": "Excessive Hunger"
+      },
+      {
+        "id": "extra_marital_contacts",
+        "label": "Extra Marital Contacts"
+      },
+      {
+        "id": "movement_stiffness",
+        "label": "Movement Stiffness"
+      },
+      {
+        "id": "spinning_movements",
+        "label": "Spinning Movements"
+      },
+      {
+        "id": "loss_of_balance",
+        "label": "Loss Of Balance"
+      },
+      {
+        "id": "weakness_of_one_body_side",
+        "label": "Weakness Of One Body Side"
+      },
+      {
+        "id": "toxic_look_(typhos)",
+        "label": "Toxic Look (Typhos)"
+      },
+      {
+        "id": "red_spots_over_body",
+        "label": "Red Spots Over Body"
+      },
+      {
+        "id": "belly_pain",
+        "label": "Belly Pain"
+      },
+      {
+        "id": "abnormal_menstruation",
+        "label": "Abnormal Menstruation"
+      },
+      {
+        "id": "watering_from_eyes",
+        "label": "Watering From Eyes"
+      },
+      {
+        "id": "family_history",
+        "label": "Family History"
+      },
+      {
+        "id": "rusty_sputum",
+        "label": "Rusty Sputum"
+      },
+      {
+        "id": "receiving_blood_transfusion",
+        "label": "Receiving Blood Transfusion"
+      },
+      {
+        "id": "receiving_unsterile_injections",
+        "label": "Receiving Unsterile Injections"
+      },
+      {
+        "id": "coma",
+        "label": "Coma"
+      },
+      {
+        "id": "history_of_alcohol_consumption",
+        "label": "History Of Alcohol Consumption"
+      },
+      {
+        "id": "fluid_overload.1",
+        "label": "Fluid Overload.1"
+      },
+      {
+        "id": "prominent_veins_on_calf",
+        "label": "Prominent Veins On Calf"
+      },
+      {
+        "id": "palpitations",
+        "label": "Palpitations"
+      },
+      {
+        "id": "painful_walking",
+        "label": "Painful Walking"
+      },
+      {
+        "id": "pus_filled_pimples",
+        "label": "Pus Filled Pimples"
+      },
+      {
+        "id": "blackheads",
+        "label": "Blackheads"
+      },
+      {
+        "id": "scurring",
+        "label": "Scurring"
+      },
+      {
+        "id": "silver_like_dusting",
+        "label": "Silver Like Dusting"
+      },
+      {
+        "id": "red_sore_around_nose",
+        "label": "Red Sore Around Nose"
+      },
+      {
+        "id": "yellow_crust_ooze",
+        "label": "Yellow Crust Ooze"
+      }
+    ]
+  },
+  "diseases": [
+    "(vertigo) Paroymsal  Positional Vertigo",
+    "AIDS",
+    "Acne",
+    "Alcoholic hepatitis",
+    "Allergy",
+    "Arthritis",
+    "Bronchial Asthma",
+    "Cervical spondylosis",
+    "Chicken pox",
+    "Chronic cholestasis",
+    "Common Cold",
+    "Dengue",
+    "Diabetes ",
+    "Dimorphic hemmorhoids(piles)",
+    "Drug Reaction",
+    "Fungal infection",
+    "GERD",
+    "Gastroenteritis",
+    "Heart attack",
+    "Hepatitis B",
+    "Hepatitis C",
+    "Hepatitis D",
+    "Hepatitis E",
+    "Hypertension ",
+    "Hyperthyroidism",
+    "Hypoglycemia",
+    "Hypothyroidism",
+    "Impetigo",
+    "Jaundice",
+    "Malaria",
+    "Migraine",
+    "Osteoarthristis",
+    "Paralysis (brain hemorrhage)",
+    "Peptic ulcer diseae",
+    "Pneumonia",
+    "Psoriasis",
+    "Tuberculosis",
+    "Typhoid",
+    "Urinary tract infection",
+    "Varicose veins",
+    "hepatitis A"
+  ],
+  "total_diseases": 41,
+  "accuracy_benchmark": 0.9761904761904762,
+  "accuracy_validation": 1.0,
+  "comparison": [
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.9761904761904762,
+      "Precision": 0.9880952380952381,
+      "Recall": 0.9761904761904762,
+      "F1-Score": 0.9761904761904762
+    },
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 1.0,
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1-Score": 1.0
+    },
+    {
+      "Model": "Decision Tree",
+      "Accuracy": 0.9761904761904762,
+      "Precision": 0.9880952380952381,
+      "Recall": 0.9761904761904762,
+      "F1-Score": 0.9761904761904762
+    },
+    {
+      "Model": "Gaussian Naive Bayes",
+      "Accuracy": 1.0,
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1-Score": 1.0
+    },
+    {
+      "Model": "Support Vector Machine",
+      "Accuracy": 1.0,
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1-Score": 1.0
+    }
+  ]
+}

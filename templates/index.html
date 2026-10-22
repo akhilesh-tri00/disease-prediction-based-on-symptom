@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediPredict AI — Intelligent Disease Diagnosis & Symptom Analyzer</title>
+    <meta name="description" content="Predict medical diseases from symptoms using Machine Learning with 97.6% benchmark accuracy across 41 conditions and 132 symptoms.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Top Navigation Header -->
+    <header class="app-header">
+        <div class="header-container">
+            <div class="brand">
+                <div class="brand-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="brand-title">MediPredict <span class="gradient-text">AI</span></h1>
+                    <p class="brand-subtitle">Clinical Machine Learning Diagnostic System</p>
+                </div>
+            </div>
+            
+            <div class="header-stats">
+                <div class="stat-pill">
+                    <span class="stat-dot green"></span>
+                    <span class="stat-label">Model Accuracy:</span>
+                    <strong class="stat-val" id="header-accuracy">97.6%</strong>
+                </div>
+                <div class="stat-pill">
+                    <span class="stat-label">Diseases:</span>
+                    <strong class="stat-val">41</strong>
+                </div>
+                <div class="stat-pill">
+                    <span class="stat-label">Symptoms:</span>
+                    <strong class="stat-val">132</strong>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-container">
+        
+        <!-- Clinical Disclaimer Alert Banner -->
+        <div class="disclaimer-banner">
+            <div class="disclaimer-icon">⚠️</div>
+            <div class="disclaimer-text">
+                <strong>Medical Decision Support Note:</strong> This machine learning model provides predictive disease probabilities based on binary symptom vectors. It is designed for educational triage and research. Always consult a certified healthcare professional for medical emergencies and clinical diagnoses.
+            </div>
+        </div>
+
+        <!-- Presets Row -->
+        <section class="presets-section">
+            <span class="presets-label">⚡ Quick Presets:</span>
+            <div class="presets-grid" id="presets-container">
+                <button class="preset-btn" onclick="applyPreset('flu')">
+                    <span>🤒</span> Viral Flu / Fever
+                </button>
+                <button class="preset-btn" onclick="applyPreset('gastro')">
+                    <span>🤢</span> Gastroenteritis
+                </button>
+                <button class="preset-btn" onclick="applyPreset('skin')">
+                    <span>🌿</span> Fungal Skin Infection
+                </button>
+                <button class="preset-btn" onclick="applyPreset('migraine')">
+                    <span>🤕</span> Acute Migraine
+                </button>
+                <button class="preset-btn" onclick="applyPreset('dengue')">
+                    <span>🦟</span> Dengue Fever
+                </button>
+                <button class="preset-btn" onclick="applyPreset('diabetes')">
+                    <span>🩸</span> Diabetes Mellitus
+                </button>
+            </div>
+        </section>
+
+        <!-- Navigation Tabs -->
+        <div class="nav-tabs">
+            <button class="tab-btn active" id="tab-diagnosis" onclick="switchMainTab('diagnosis')">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                <span>Symptom Diagnostic Lab</span>
+            </button>
+            <button class="tab-btn" id="tab-analytics" onclick="switchMainTab('analytics')">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                <span>Model Analytics & Graphs (5)</span>
+            </button>
+            <button class="tab-btn" id="tab-library" onclick="switchMainTab('library')">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                <span>Disease Reference Directory</span>
+            </button>
+        </div>
+
+        <!-- TAB 1: DIAGNOSTIC LAB -->
+        <div class="tab-pane active" id="pane-diagnosis">
+            <div class="layout-grid">
+                
+                <!-- Left Column: Symptom Picker -->
+                <div class="glass-card symptom-selector-card">
+                    <div class="card-header">
+                        <div class="card-title-group">
+                            <h2 class="card-title">1. Select Patient Symptoms</h2>
+                            <p class="card-desc">Choose from 132 clinical symptoms across anatomical categories</p>
+                        </div>
+                        <button class="btn-text" id="clear-all-btn" onclick="clearAllSymptoms()">Clear Selection</button>
+                    </div>
+
+                    <!-- Search Box -->
+                    <div class="search-box">
+                        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                        <input type="text" id="symptom-search" placeholder="Search symptom (e.g., fever, chest pain, rash, nausea)..." autocomplete="off" oninput="filterSymptoms()">
+                        <button class="search-clear" id="search-clear" onclick="clearSearch()" style="display:none;">✕</button>
+                    </div>
+
+                    <!-- Category Pills -->
+                    <div class="category-scroll" id="category-pills">
+                        <!-- Populated dynamically via JS -->
+                    </div>
+
+                    <!-- Symptom Chips Container -->
+                    <div class="symptoms-grid" id="symptoms-grid">
+                        <div class="loading-state">Loading symptoms catalog...</div>
+                    </div>
+
+                    <!-- Selected Dock / Action Bar -->
+                    <div class="selected-dock">
+                        <div class="selected-header">
+                            <span>Selected Symptoms (<strong id="selected-count">0</strong>):</span>
+                        </div>
+                        <div class="selected-tags" id="selected-tags">
+                            <span class="placeholder-text">No symptoms selected yet. Click any symptom tag above or pick a Quick Preset!</span>
+                        </div>
+                        <div class="dock-actions">
+                            <button class="btn btn-primary" id="diagnose-btn" onclick="runDiagnosis()" disabled>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                                <span>Generate AI Diagnosis</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Diagnostic Results -->
+                <div class="glass-card result-card" id="results-panel">
+                    <div class="card-header">
+                        <div class="card-title-group">
+                            <h2 class="card-title">2. Diagnostic Assessment</h2>
+                            <p class="card-desc">Probabilistic model inference and clinical triage</p>
+                        </div>
+                    </div>
+
+                    <!-- Empty state before diagnosis -->
+                    <div class="empty-state" id="empty-state">
+                        <div class="empty-icon">🩺</div>
+                        <h3>Awaiting Symptoms Input</h3>
+                        <p>Select symptoms from the left catalog or choose a quick preset above, then click <strong>"Generate AI Diagnosis"</strong>.</p>
+                    </div>
+
+                    <!-- Loading state -->
+                    <div class="loading-panel" id="loading-panel" style="display: none;">
+                        <div class="spinner"></div>
+                        <p>Analyzing symptom pattern against 41 disease models...</p>
+                    </div>
+
+                    <!-- Active Result View -->
+                    <div class="diagnosis-content" id="diagnosis-content" style="display: none;">
+                        
+                        <!-- Primary Diagnosis Banner -->
+                        <div class="primary-result-box" id="primary-box">
+                            <div class="result-badge-row">
+                                <span class="badge primary-badge">Primary Diagnosis</span>
+                                <span class="badge severity-badge" id="res-severity">Moderate</span>
+                            </div>
+                            <h3 class="diagnosis-name" id="res-disease">Fungal infection</h3>
+                            
+                            <!-- Confidence Meter -->
+                            <div class="confidence-container">
+                                <div class="confidence-labels">
+                                    <span>Model Confidence Score</span>
+                                    <strong id="res-confidence-text">98.5%</strong>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-bar" id="res-progress-bar" style="width: 0%;"></div>
+                                </div>
+                            </div>
+
+                            <p class="diagnosis-desc" id="res-desc">Description of disease...</p>
+                        </div>
+
+                        <!-- Specialist & Consultation Advice -->
+                        <div class="doctor-card">
+                            <div class="doctor-icon">👨‍⚕️</div>
+                            <div>
+                                <div class="doctor-label">Recommended Medical Specialist</div>
+                                <div class="doctor-name" id="res-specialist">Dermatologist</div>
+                            </div>
+                        </div>
+
+                        <!-- Top Differential Diagnoses (Probabilities Bar Chart) -->
+                        <div class="section-card">
+                            <h4 class="section-title">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                                Differential Diagnosis Probabilities
+                            </h4>
+                            <div class="prob-list" id="prob-list">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+
+                        <!-- Clinical Precautions Checklist -->
+                        <div class="section-card">
+                            <h4 class="section-title">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                Recommended Precautions & Care Measures
+                            </h4>
+                            <ul class="precautions-list" id="res-precautions">
+                                <!-- Populated dynamically -->
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- TAB 2: MODEL ANALYTICS & GRAPHS -->
+        <div class="tab-pane" id="pane-analytics">
+            <div class="analytics-header">
+                <h2>Machine Learning Performance & Clinical Analytics</h2>
+                <p>Evaluation charts generated from training and validating across 4,920 patient records and 41 disease classes.</p>
+            </div>
+
+            <!-- Metrics Summary Cards -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-label">Benchmark Test Accuracy</div>
+                    <div class="metric-value gradient-text">97.6%</div>
+                    <div class="metric-sub">On unseen Testing.csv dataset</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Ensemble Model</div>
+                    <div class="metric-value">Random Forest</div>
+                    <div class="metric-sub">200 Decision Trees (balanced weights)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Symptom Dimensions</div>
+                    <div class="metric-value">132 Features</div>
+                    <div class="metric-sub">Binary clinical indicators</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Disease Coverage</div>
+                    <div class="metric-value">41 Classes</div>
+                    <div class="metric-sub">Multiclass diagnostic taxonomy</div>
+                </div>
+            </div>
+
+            <!-- Graphs Gallery -->
+            <div class="graphs-gallery" id="graphs-gallery">
+                
+                <!-- Graph 1: Feature Importance -->
+                <div class="graph-card">
+                    <div class="graph-card-header">
+                        <div>
+                            <span class="graph-tag">Graph 1</span>
+                            <h3>Top 20 Most Predictive Symptoms (Feature Importance)</h3>
+                        </div>
+                        <button class="zoom-btn" onclick="openModal('/static/graphs/feature_importance.png', 'Top 20 Most Predictive Symptoms')">🔍 Zoom</button>
+                    </div>
+                    <div class="graph-img-wrapper" onclick="openModal('/static/graphs/feature_importance.png', 'Top 20 Most Predictive Symptoms')">
+                        <img src="/static/graphs/feature_importance.png" alt="Feature Importance Graph" loading="lazy">
+                    </div>
+                    <p class="graph-desc">Identifies symptoms with the highest Gini Impurity reduction. High-ranking features like Chest Pain, Fatigue, and Skin Rash carry maximum diagnostic leverage in differentiating diseases.</p>
+                </div>
+
+                <!-- Graph 2: Confusion Matrix -->
+                <div class="graph-card">
+                    <div class="graph-card-header">
+                        <div>
+                            <span class="graph-tag">Graph 2</span>
+                            <h3>Testing Dataset Confusion Matrix (Heatmap)</h3>
+                        </div>
+                        <button class="zoom-btn" onclick="openModal('/static/graphs/confusion_matrix.png', 'Confusion Matrix Heatmap')">🔍 Zoom</button>
+                    </div>
+                    <div class="graph-img-wrapper" onclick="openModal('/static/graphs/confusion_matrix.png', 'Confusion Matrix Heatmap')">
+                        <img src="/static/graphs/confusion_matrix.png" alt="Confusion Matrix Graph" loading="lazy">
+                    </div>
+                    <p class="graph-desc">Evaluates actual vs. predicted labels across all 41 diseases on unseen test data. The near-perfect diagonal demonstrates consistent high precision and zero cross-system misclassifications.</p>
+                </div>
+
+                <!-- Graph 3: Model Comparison -->
+                <div class="graph-card">
+                    <div class="graph-card-header">
+                        <div>
+                            <span class="graph-tag">Graph 3</span>
+                            <h3>Multi-Model Benchmark Comparison</h3>
+                        </div>
+                        <button class="zoom-btn" onclick="openModal('/static/graphs/model_comparison.png', 'Model Performance Comparison')">🔍 Zoom</button>
+                    </div>
+                    <div class="graph-img-wrapper" onclick="openModal('/static/graphs/model_comparison.png', 'Model Performance Comparison')">
+                        <img src="/static/graphs/model_comparison.png" alt="Model Comparison Graph" loading="lazy">
+                    </div>
+                    <p class="graph-desc">Benchmarks Random Forest, Logistic Regression, Decision Tree, Gaussian Naive Bayes, and SVM on Accuracy, Precision, Recall, and F1-score to justify our production architecture.</p>
+                </div>
+
+                <!-- Graph 4: Symptom Distribution -->
+                <div class="graph-card">
+                    <div class="graph-card-header">
+                        <div>
+                            <span class="graph-tag">Graph 4</span>
+                            <h3>Reported Symptoms per Patient Distribution</h3>
+                        </div>
+                        <button class="zoom-btn" onclick="openModal('/static/graphs/symptom_distribution.png', 'Symptom Count Distribution')">🔍 Zoom</button>
+                    </div>
+                    <div class="graph-img-wrapper" onclick="openModal('/static/graphs/symptom_distribution.png', 'Symptom Count Distribution')">
+                        <img src="/static/graphs/symptom_distribution.png" alt="Symptom Distribution Graph" loading="lazy">
+                    </div>
+                    <p class="graph-desc">Demonstrates that patients typically present with 4 to 6 simultaneous symptoms (median = 5.0), illustrating realistic multi-symptom presentations in medical consultations.</p>
+                </div>
+
+                <!-- Graph 5: Disease Distribution -->
+                <div class="graph-card">
+                    <div class="graph-card-header">
+                        <div>
+                            <span class="graph-tag">Graph 5</span>
+                            <h3>Disease Class Balance in Dataset</h3>
+                        </div>
+                        <button class="zoom-btn" onclick="openModal('/static/graphs/disease_distribution.png', 'Disease Class Balance')">🔍 Zoom</button>
+                    </div>
+                    <div class="graph-img-wrapper" onclick="openModal('/static/graphs/disease_distribution.png', 'Disease Class Balance')">
+                        <img src="/static/graphs/disease_distribution.png" alt="Disease Distribution Graph" loading="lazy">
+                    </div>
+                    <p class="graph-desc">Visualizes equal 120-case representation across each of the 41 medical categories in the training data, preventing majority-class bias.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- TAB 3: DISEASE REFERENCE DIRECTORY -->
+        <div class="tab-pane" id="pane-library">
+            <div class="library-header">
+                <h2>Clinical Disease Reference Library (41 Conditions)</h2>
+                <p>Browse descriptions, severity levels, recommended specialists, and preventive precautions for all diseases in the model knowledge base.</p>
+                <div class="search-box" style="margin-top: 15px; max-width: 500px;">
+                    <input type="text" id="disease-search" placeholder="Search disease by name (e.g. Malaria, Asthma, Diabetes)..." oninput="filterDiseases()">
+                </div>
+            </div>
+
+            <div class="diseases-grid" id="diseases-directory">
+                <div class="loading-state">Loading clinical reference directory...</div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Modal for Zooming Graphs -->
+    <div class="modal" id="graph-modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h3 id="modal-title">Graph Inspection</h3>
+                <button class="modal-close" onclick="closeModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <img id="modal-img" src="" alt="Zoomed Graph">
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

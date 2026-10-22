@@ -1,0 +1,453 @@
+{
+  "(vertigo) Paroymsal  Positional Vertigo": {
+    "description": "Benign Paroxysmal Positional Vertigo (BPPV) causes brief episodes of mild to intense dizziness triggered by specific changes in head position.",
+    "specialist": "Neurologist / ENT Specialist",
+    "precautions": [
+      "Avoid sudden head movements",
+      "Lie down in a calm, dim room during episodes",
+      "Perform Canalith repositioning (Epley maneuver)",
+      "Stay hydrated and avoid driving while dizzy"
+    ],
+    "severity": "Moderate"
+  },
+  "AIDS": {
+    "description": "Acquired Immunodeficiency Syndrome is a chronic condition caused by HIV that weakens the immune system and impairs the body's ability to fight infection.",
+    "specialist": "Infectious Disease Specialist",
+    "precautions": [
+      "Adhere strictly to Antiretroviral Therapy (ART)",
+      "Practice safe sex and barrier protection",
+      "Maintain strict hygiene and food safety",
+      "Avoid contact with infectious individuals"
+    ],
+    "severity": "Critical"
+  },
+  "Acne": {
+    "description": "A skin condition that occurs when hair follicles plug with oil and dead skin cells, causing whiteheads, blackheads, or pimples.",
+    "specialist": "Dermatologist",
+    "precautions": [
+      "Wash face twice daily with mild cleanser",
+      "Avoid popping or squeezing lesions",
+      "Use non-comedogenic cosmetics",
+      "Limit high-glycemic foods and excess dairy"
+    ],
+    "severity": "Mild"
+  },
+  "Alcoholic hepatitis": {
+    "description": "Liver inflammation caused by chronic and heavy alcohol consumption, leading to liver cell damage and jaundice.",
+    "specialist": "Hepatologist / Gastroenterologist",
+    "precautions": [
+      "Stop alcohol consumption completely",
+      "Consume a nutrient-dense, high-protein diet",
+      "Monitor liver function and jaundice levels",
+      "Seek addiction counseling and medical detox support"
+    ],
+    "severity": "Severe"
+  },
+  "Allergy": {
+    "description": "An immune system reaction to a foreign substance (allergen) such as pollen, pet dander, dust mites, or certain foods.",
+    "specialist": "Allergist / Immunologist",
+    "precautions": [
+      "Identify and avoid specific allergen triggers",
+      "Use over-the-counter or prescribed antihistamines",
+      "Keep living spaces clean and well-ventilated",
+      "Carry an epinephrine auto-injector if severe"
+    ],
+    "severity": "Mild to Moderate"
+  },
+  "Arthritis": {
+    "description": "Inflammation of one or more joints, causing pain, swelling, and stiffness that can worsen with age.",
+    "specialist": "Rheumatologist / Orthopedic Surgeon",
+    "precautions": [
+      "Engage in low-impact physical therapy and swimming",
+      "Maintain a healthy weight to reduce joint load",
+      "Apply alternating warm and cold compresses",
+      "Take prescribed anti-inflammatory medication"
+    ],
+    "severity": "Moderate"
+  },
+  "Bronchial Asthma": {
+    "description": "A chronic condition in which airways narrow, swell, and produce extra mucus, making breathing difficult.",
+    "specialist": "Pulmonologist",
+    "precautions": [
+      "Always carry a rescue inhaler",
+      "Avoid cold air, dust, smoke, and pollen triggers",
+      "Monitor peak flow breathing rates",
+      "Practice breathing exercises and maintain clean air"
+    ],
+    "severity": "Moderate to Severe"
+  },
+  "Cervical spondylosis": {
+    "description": "Age-related wear and tear affecting the spinal disks in your neck, leading to chronic stiffness and radiating pain.",
+    "specialist": "Orthopedic / Physiotherapist",
+    "precautions": [
+      "Maintain ergonomic posture when using screens",
+      "Perform gentle neck stretching exercises daily",
+      "Use an orthopedic supportive pillow",
+      "Avoid carrying heavy loads on shoulders"
+    ],
+    "severity": "Moderate"
+  },
+  "Chicken pox": {
+    "description": "A highly contagious viral infection caused by the varicella-zoster virus, characterized by an itchy, blister-like rash.",
+    "specialist": "General Physician / Pediatrician",
+    "precautions": [
+      "Isolate from uninfected individuals until all blisters crust",
+      "Apply calamine lotion to soothe itching",
+      "Trim fingernails to prevent secondary skin infections",
+      "Rest and drink plenty of fluids"
+    ],
+    "severity": "Moderate"
+  },
+  "Chronic cholestasis": {
+    "description": "A condition where bile flow from the liver is reduced or stalled for an extended duration, causing pruritus and jaundice.",
+    "specialist": "Hepatologist",
+    "precautions": [
+      "Follow a low-fat, balanced diet",
+      "Supplement with fat-soluble vitamins (A, D, E, K)",
+      "Avoid hepatotoxic medications and alcohol",
+      "Regular liver enzyme blood panels"
+    ],
+    "severity": "Severe"
+  },
+  "Common Cold": {
+    "description": "A viral infection of the upper respiratory tract primarily affecting the nose, throat, sinuses, and larynx.",
+    "specialist": "General Physician",
+    "precautions": [
+      "Rest adequately and drink warm fluids",
+      "Use saline nasal drops and steam inhalation",
+      "Gargle with warm salt water",
+      "Wash hands frequently to avoid spreading"
+    ],
+    "severity": "Mild"
+  },
+  "Dengue": {
+    "description": "A mosquito-borne viral disease that occurs in tropical and subtropical areas, causing high fever, severe headache, and joint pain.",
+    "specialist": "Infectious Disease Specialist",
+    "precautions": [
+      "Monitor platelet counts daily via CBC tests",
+      "Maintain aggressive oral hydration (ORS, coconut water)",
+      "Avoid aspirin and ibuprofen (use paracetamol only)",
+      "Prevent mosquito bites and eliminate standing water"
+    ],
+    "severity": "Severe"
+  },
+  "Diabetes ": {
+    "description": "A metabolic disorder that causes high blood sugar due to insufficient insulin production or cellular insulin resistance.",
+    "specialist": "Endocrinologist",
+    "precautions": [
+      "Monitor blood glucose levels regularly",
+      "Adopt a low-glycemic, fiber-rich diet",
+      "Engage in at least 30 minutes of daily exercise",
+      "Inspect feet daily for sores or loss of sensation"
+    ],
+    "severity": "Moderate to Severe"
+  },
+  "Dimorphic hemmorhoids(piles)": {
+    "description": "Swollen and inflamed veins in the lower rectum and anus, causing rectal bleeding, pain, and itching.",
+    "specialist": "Colorectal Surgeon / Proctologist",
+    "precautions": [
+      "Eat high-fiber foods and drink plenty of water",
+      "Avoid straining during bowel movements",
+      "Take warm sitz baths for 15-20 minutes",
+      "Avoid prolonged sitting on the toilet"
+    ],
+    "severity": "Moderate"
+  },
+  "Drug Reaction": {
+    "description": "An adverse reaction or allergy to a specific pharmaceutical drug, presenting as skin eruptions, hives, or systemic symptoms.",
+    "specialist": "Clinical Pharmacologist / Dermatologist",
+    "precautions": [
+      "Immediately discontinue the suspected drug under medical guidance",
+      "Seek emergency care if lip/throat swelling occurs",
+      "Record drug allergy on medical profile",
+      "Take prescribed antihistamines or corticosteroids"
+    ],
+    "severity": "Moderate to Severe"
+  },
+  "Fungal infection": {
+    "description": "An infection caused by fungus affecting the skin, nails, or hair (such as ringworm, tinea, or athlete's foot).",
+    "specialist": "Dermatologist",
+    "precautions": [
+      "Keep affected skin clean, dry, and cool",
+      "Apply topical antifungal creams as prescribed",
+      "Do not share towels, clothes, or personal items",
+      "Wear loose-fitting, breathable cotton clothing"
+    ],
+    "severity": "Mild"
+  },
+  "GERD": {
+    "description": "Gastroesophageal Reflux Disease occurs when stomach acid repeatedly flows back into the esophagus, irritating the lining.",
+    "specialist": "Gastroenterologist",
+    "precautions": [
+      "Avoid spicy, acidic, fatty, and caffeinated foods",
+      "Do not lie down within 3 hours after eating",
+      "Elevate the head of your bed by 6-9 inches",
+      "Eat smaller, more frequent meals"
+    ],
+    "severity": "Moderate"
+  },
+  "Gastroenteritis": {
+    "description": "Inflammation of the gastrointestinal tract involving the stomach and small intestine, causing diarrhea, cramps, and nausea.",
+    "specialist": "Gastroenterologist / Physician",
+    "precautions": [
+      "Drink Oral Rehydration Solution (ORS) frequently",
+      "Eat bland foods following the BRAT diet (bananas, rice, applesauce, toast)",
+      "Avoid dairy, alcohol, and spicy foods",
+      "Practice thorough handwashing"
+    ],
+    "severity": "Moderate"
+  },
+  "Heart attack": {
+    "description": "A medical emergency occurring when blood flow to a part of the heart muscle is severely reduced or blocked.",
+    "specialist": "Cardiologist / Emergency Medicine",
+    "precautions": [
+      "CALL EMERGENCY SERVICES (911/112) IMMEDIATELY",
+      "Chew an aspirin if recommended by emergency dispatch",
+      "Remain seated and calm, loosen tight clothing",
+      "Begin CPR if the individual becomes unresponsive"
+    ],
+    "severity": "Emergency"
+  },
+  "Hepatitis B": {
+    "description": "A serious liver infection caused by the hepatitis B virus (HBV) transmitted through infected blood or bodily fluids.",
+    "specialist": "Hepatologist / Gastroenterologist",
+    "precautions": [
+      "Avoid alcohol and hepatotoxic substances",
+      "Vaccinate close household contacts",
+      "Do not share needles, razors, or toothbrushes",
+      "Follow viral load and liver function tests regularly"
+    ],
+    "severity": "Severe"
+  },
+  "Hepatitis C": {
+    "description": "A blood-borne viral infection that causes inflammation of the liver, leading to chronic liver damage if untreated.",
+    "specialist": "Hepatologist",
+    "precautions": [
+      "Consult a specialist for direct-acting antiviral (DAA) therapy",
+      "Avoid alcohol and smoking completely",
+      "Maintain healthy nutrition and weight",
+      "Avoid sharing items that may carry blood traces"
+    ],
+    "severity": "Severe"
+  },
+  "Hepatitis D": {
+    "description": "A rare and severe liver infection caused by the hepatitis D virus (HDV) that only occurs in people infected with hepatitis B.",
+    "specialist": "Hepatologist",
+    "precautions": [
+      "Maintain antiviral medication regimen",
+      "Strict avoidance of alcohol",
+      "Monitor liver fibrosis and cirrhosis biomarkers",
+      "Adhere to barrier precautions"
+    ],
+    "severity": "Severe"
+  },
+  "Hepatitis E": {
+    "description": "A liver disease caused by the hepatitis E virus (HEV), commonly transmitted through contaminated drinking water.",
+    "specialist": "Gastroenterologist / Physician",
+    "precautions": [
+      "Drink only boiled or filtered purified water",
+      "Practice strict food hygiene and avoid raw shellfish",
+      "Ensure plenty of bed rest and fluid intake",
+      "Pregnant women must seek immediate medical attention"
+    ],
+    "severity": "Moderate to Severe"
+  },
+  "Hypertension ": {
+    "description": "A chronic medical condition in which the blood pressure in the arteries is persistently elevated above 130/80 mmHg.",
+    "specialist": "Cardiologist / Physician",
+    "precautions": [
+      "Reduce dietary sodium intake (<2g/day)",
+      "Exercise regularly for at least 30 minutes daily",
+      "Avoid smoking and limit alcohol intake",
+      "Monitor blood pressure at home and take medications as prescribed"
+    ],
+    "severity": "Moderate"
+  },
+  "Hyperthyroidism": {
+    "description": "A condition where the thyroid gland produces excess thyroid hormones, causing rapid heart rate, weight loss, and nervousness.",
+    "specialist": "Endocrinologist",
+    "precautions": [
+      "Take antithyroid medications as directed",
+      "Avoid excess dietary iodine and kelp",
+      "Practice stress management techniques",
+      "Monitor resting heart rate and thyroid panel"
+    ],
+    "severity": "Moderate"
+  },
+  "Hypoglycemia": {
+    "description": "A deficiency of glucose in the bloodstream, leading to shaking, sweating, confusion, and dizziness.",
+    "specialist": "Endocrinologist",
+    "precautions": [
+      "Consume 15-20g fast-acting carbohydrates immediately (e.g. juice, glucose tablets)",
+      "Re-check blood glucose after 15 minutes (Rule of 15)",
+      "Carry portable sugar snacks at all times",
+      "Adjust diabetic medication dosage under doctor guidance"
+    ],
+    "severity": "Moderate to Severe"
+  },
+  "Hypothyroidism": {
+    "description": "An underactive thyroid gland that does not produce enough thyroid hormones, leading to fatigue, weight gain, and cold sensitivity.",
+    "specialist": "Endocrinologist",
+    "precautions": [
+      "Take levothyroxine medication on an empty stomach 30-60 min before breakfast",
+      "Have regular TSH and free T4 blood tests",
+      "Maintain a balanced, nutrient-rich diet",
+      "Exercise to boost metabolism and energy levels"
+    ],
+    "severity": "Moderate"
+  },
+  "Impetigo": {
+    "description": "A highly contagious bacterial skin infection that mainly affects infants and young children, causing sores around nose and mouth.",
+    "specialist": "Dermatologist / Pediatrician",
+    "precautions": [
+      "Wash sores gently with antibacterial soap and warm water",
+      "Apply prescribed antibiotic ointment and cover lightly with gauze",
+      "Wash hands, bedding, and clothes in hot water",
+      "Do not touch or scratch the crusts"
+    ],
+    "severity": "Mild to Moderate"
+  },
+  "Jaundice": {
+    "description": "A yellowing of the skin and eyes caused by high bilirubin levels, indicating liver, gallbladder, or red blood cell issues.",
+    "specialist": "Gastroenterologist / Hepatologist",
+    "precautions": [
+      "Undergo immediate liver function and ultrasound tests",
+      "Drink fresh water and stay well hydrated",
+      "Avoid fatty, oily, and heavy foods",
+      "Completely abstain from alcohol"
+    ],
+    "severity": "Moderate to Severe"
+  },
+  "Malaria": {
+    "description": "A mosquito-borne infectious disease caused by Plasmodium parasites, characterized by cyclic fever, chills, and sweats.",
+    "specialist": "Infectious Disease Specialist",
+    "precautions": [
+      "Complete the full course of prescribed antimalarial medication (ACT)",
+      "Use insecticide-treated bed nets and repellent",
+      "Maintain adequate fluid intake and rest",
+      "Seek emergency care if confusion or severe vomiting occurs"
+    ],
+    "severity": "Severe"
+  },
+  "Migraine": {
+    "description": "A neurological condition causing intense, debilitating throbbing headache pain, often accompanied by nausea and light sensitivity.",
+    "specialist": "Neurologist",
+    "precautions": [
+      "Rest in a quiet, dark, and cool room",
+      "Identify and avoid triggers (aged cheese, stress, lack of sleep)",
+      "Stay well-hydrated throughout the day",
+      "Take acute migraine relief medications at early onset"
+    ],
+    "severity": "Moderate"
+  },
+  "Osteoarthristis": {
+    "description": "The most common form of arthritis, caused by the breakdown of protective cartilage cushioning the ends of bones.",
+    "specialist": "Orthopedic Specialist / Rheumatologist",
+    "precautions": [
+      "Engage in low-impact aerobic exercise (walking, swimming)",
+      "Maintain a healthy body weight to protect knee and hip joints",
+      "Apply thermal therapy (heat pads or ice packs)",
+      "Use assistive devices if needed to maintain mobility"
+    ],
+    "severity": "Moderate"
+  },
+  "Paralysis (brain hemorrhage)": {
+    "description": "Loss of muscle function and movement resulting from bleeding in the brain tissue (hemorrhagic stroke).",
+    "specialist": "Neurologist / Neurosurgeon",
+    "precautions": [
+      "CALL EMERGENCY SERVICES IMMEDIATELY (FAST protocol)",
+      "Strict blood pressure control under intensive care",
+      "Engage in dedicated neuro-rehabilitation and physical therapy",
+      "Prevent falls and aspiration"
+    ],
+    "severity": "Emergency"
+  },
+  "Peptic ulcer diseae": {
+    "description": "Painful sores on the lining of the stomach, small intestine, or esophagus caused by acid erosion or H. pylori bacteria.",
+    "specialist": "Gastroenterologist",
+    "precautions": [
+      "Avoid NSAID painkillers like ibuprofen and aspirin",
+      "Take proton pump inhibitors (PPIs) as prescribed",
+      "Limit caffeine, acidic drinks, and spicy foods",
+      "Eat meals on a regular schedule"
+    ],
+    "severity": "Moderate"
+  },
+  "Pneumonia": {
+    "description": "An infection that inflames the air sacs in one or both lungs, which may fill with fluid or pus, causing cough and fever.",
+    "specialist": "Pulmonologist / Physician",
+    "precautions": [
+      "Take the full course of prescribed antibiotics or antivirals",
+      "Get plenty of rest and drink lots of fluids",
+      "Use a humidifier or inhale warm steam",
+      "Seek emergency care if breathing becomes labored or lips turn blue"
+    ],
+    "severity": "Severe"
+  },
+  "Psoriasis": {
+    "description": "A chronic autoimmune skin disease that speeds up the growth cycle of skin cells, leading to scaly, silvery plaques.",
+    "specialist": "Dermatologist",
+    "precautions": [
+      "Moisturize skin daily with thick emollient ointments",
+      "Avoid skin injury, harsh soaps, and sunburn",
+      "Manage stress through relaxation techniques",
+      "Use prescribed topical corticosteroids or phototherapy"
+    ],
+    "severity": "Moderate"
+  },
+  "Tuberculosis": {
+    "description": "A potentially serious infectious bacterial disease that mainly affects the lungs, spread through microscopic respiratory droplets.",
+    "specialist": "Pulmonologist / Infectious Disease Specialist",
+    "precautions": [
+      "Strictly complete the 6-month DOTS antibiotic treatment",
+      "Wear a mask and ensure good room ventilation during infectious phase",
+      "Cover mouth and nose when coughing or sneezing",
+      "Maintain a high-protein, nourishing diet"
+    ],
+    "severity": "Severe"
+  },
+  "Typhoid": {
+    "description": "A bacterial infection caused by Salmonella typhi, transmitted through contaminated food or water, causing sustained high fever.",
+    "specialist": "Infectious Disease Specialist",
+    "precautions": [
+      "Complete the entire course of prescribed antibiotics",
+      "Drink only boiled or bottled water",
+      "Eat hot, freshly cooked foods; peel raw fruits yourself",
+      "Wash hands thoroughly with soap before eating"
+    ],
+    "severity": "Severe"
+  },
+  "Urinary tract infection": {
+    "description": "An infection in any part of the urinary system (kidneys, ureters, bladder, and urethra), causing burning urination and urgency.",
+    "specialist": "Urologist / General Physician",
+    "precautions": [
+      "Drink plenty of water to flush bacteria from the urinary tract",
+      "Urinate as soon as the urge arises without holding it",
+      "Wipe from front to back after using the bathroom",
+      "Complete the prescribed antibiotic treatment course"
+    ],
+    "severity": "Moderate"
+  },
+  "Varicose veins": {
+    "description": "Gnarled, enlarged veins, most commonly appearing in the legs and feet due to weakened or damaged vein valves.",
+    "specialist": "Vascular Surgeon",
+    "precautions": [
+      "Wear graduated compression stockings",
+      "Elevate legs above heart level several times a day",
+      "Exercise regularly to improve circulation",
+      "Avoid standing or sitting in one place for long periods"
+    ],
+    "severity": "Mild to Moderate"
+  },
+  "hepatitis A": {
+    "description": "A highly contagious, short-term liver infection caused by the hepatitis A virus (HAV), typically spread through contaminated food/water.",
+    "specialist": "Gastroenterologist",
+    "precautions": [
+      "Rest adequately and stay hydrated",
+      "Avoid alcohol and medications metabolized by the liver",
+      "Practice strict handwashing before food preparation",
+      "Get vaccinated if not previously immunized"
+    ],
+    "severity": "Moderate"
+  }
+}
